@@ -2,27 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge Desktop Mobile</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .img {
+    border-radius: 10px;
+  }
+
+  body {
+    background-color: rgb(209, 227, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Card 1 */
+  .container-empat {
+          width: 325px;
+          margin: 50px auto;
+          display: flex;
+      }
+
+      .card {
+          border: 1px solid white;
+          border-radius: 14px;
+          background-color: white; 
+          overflow: hidden;
+          margin: 12px;
+          flex: 1;
+      }
+
+      .card .header {
+          height: 190px;
+          background-color: white;
+      }
+
+      .card .content {
+          text-align: center;
+          padding-bottom: 20px;
+      }
+
+      .card.gede-sist{
+        transform: scale(1.12);
+      }
+</style>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="container-empat">
+        <div class="card">
+          <br>
+          <img src="images/image-qr-code.png" style="width: 265px; display: block; margin: auto;" class="img">
+          <div class="header">
+          <div class="content">
+            <br>
+            <h3><bold>Improve your front-end<br>skills 
+              by building projects</bold></h3>
+              <br>
+              <p style="font-size: 16px;">
+                Scan the QR code to visit Frontend<br> 
+                Mentor and take your coding skills to<br> 
+                the next level
+              </p>
+          </div>
+          </div>
+        </div>
+    </div>
 </body>
 </html>
